@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+
+
+
+.content-container {
+    position: relative; /* 让内容容器的位置保持正常 */
+    z-index: -1;
+    color: white;
+    text-align: center;
+}
+
+
+.text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.text-content {
+    overflow-y: auto;
+    max-height: 100%; /* 调整滚动容器的最大高度 */
+}
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: red; 
+}
+
+a:hover {
+    color: rgb(255, 204, 0); 
+}
+
+
+#scroll-tip {
+    position: fixed;
+    top: 10px; /* 顶部距离 */
+    left: 10px; /* 左侧距离 */
+    background-color: rgba(0, 0, 0, 0.7); /* 背景颜色，可以根据需要调整透明度 */
+    color: rgb(255, 0, 0); /* 文本颜色 */
+    padding: 5px 10px; /* 内边距，可以根据需要调整 */
+    border-radius: 5px; /* 边框圆角 */
+    z-index: 2; /* 确保提示位于其他元素之上 */
+}
+
